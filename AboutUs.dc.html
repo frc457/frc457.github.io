@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/styles.css">
+  <script src="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+</helmet>
+<dc-import name="NavHeader" active="roster" hint-size="100%,64px"></dc-import>
+<main>
+  <section style="background:var(--gm-royal-blue);color:var(--gm-white);padding:56px 24px;text-align:center">
+    <h1 style="font-family:var(--font-title);font-size:clamp(28px,4vw,40px);margin:0">The Grease Monkeys</h1>
+  </section>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:40px 24px 64px">
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:0 0 32px">
+    <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="20px" hint-size="100%,140px">
+      <h4 style="font-family:var(--font-heading);font-size:18px;margin:0 0 8px;text-align:center">Mission</h4>
+      <p style="font-family:var(--font-body);font-size:14px;color:var(--text-secondary);line-height:var(--leading-body);margin:0">To inspire a passion for STEM in our community through outreach, competition, teamwork, and innovation, empowering students to grow and realize their full potential.</p>
+    </x-import>
+    <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="20px" hint-size="100%,140px">
+      <h4 style="font-family:var(--font-heading);font-size:18px;margin:0 0 8px;text-align:center">Vision</h4>
+      <p style="font-family:var(--font-body);font-size:14px;color:var(--text-secondary);line-height:var(--leading-body);margin:0">A team where every student, regardless of background, can discover a path into STEM and carry that confidence into whatever comes next.</p>
+    </x-import>
+  </div>
+
+  <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0 0 32px">
+
+  <div style="display:flex;gap:32px;align-items:center;margin:0 0 24px;flex-wrap:wrap">
+    <image-slot id="first-team-2000" src="uploads/first-team-2000.jpeg" shape="rounded" radius="8" placeholder="First team photo, 2000" style="flex:1 1 280px;max-width:340px;aspect-ratio:4/3"></image-slot>
+    <div style="flex:1 1 380px">
+      <h2 style="font-family:var(--font-heading);font-size:18px;color:var(--gm-black);margin:0 0 20px">Our History</h2>
+      <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);margin:0">The South San Antonio Robotics program was originally established in 1999 at South San Antonio High School in San Antonio, Texas. FRC Team 457 was founded by the Aerospace Engineering Club, which was made up of then-physics teacher Mike Henry, one mentor, and a group of ten highly motivated students.</p>
+      <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);margin:16px 0 0">In 2000, we were the first team in the San Antonio area to compete in the FIRST Robotics Competition. The name Team Gamma was officially adopted in 2001. The current team identity, the Grease Monkeys, was adopted in 2002, the same year that we won the Lone Star Regional.</p>
+    </div>
+  </div>
+
+  <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0 0 32px">
+
+  <h3 style="font-family:var(--font-heading);font-size:18px;margin-bottom:10px">What We Do</h3>
+  <div style="display:flex;gap:32px;align-items:center;margin:0 0 32px;flex-wrap:wrap">
+    <div style="flex:1 1 380px">
+      <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);margin:0">One of the goals of the robotics program has always been to help students increase their self-confidence by learning technical and non-technical skills. Members can look forward to an introduction to the worlds of engineering, manufacturing, and programming. They also develop valuable skills such as leadership, teambuilding, and communication. Mentors from different areas provide assistance and guidance while working with the team. We welcome all students who are interested.</p>
+      <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);margin:16px 0 0">The mission of our team is to inspire a passion for STEM in our community by providing a space for any student from any background to grow. Our team is a family, bringing together people with different strengths into one group to compete in a fun and engaging environment.</p>
+    </div>
+    <image-slot id="what-we-do-build" src="uploads/what-we-do-build.jpg" shape="rounded" radius="8" placeholder="Photo of students building" style="flex:1 1 280px;max-width:340px;aspect-ratio:4/3"></image-slot>
+  </div>
+
+  <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0 0 32px">
+
+  <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:6px">Our Team</h3>
+  <p style="font-family:var(--font-body);color:var(--text-secondary);margin:0 0 20px">{{ studentCount }} active student members · {{ mentorCount }} mentors this season</p>
+
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,120px"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { officers: [], students: [], mentors: [], activeTab: 0 };
+  async componentDidMount() {
+    const m = await import('./data/roster-data.js');
+    this.setState({ officers: m.officers, students: m.students, mentors: m.mentors });
+  }
+  tabStyle(active) {
+    return {
+      padding: "10px 18px", border: "none", background: "none", cursor: "pointer",
+      fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: 14,
+      color: active ? "var(--brand-primary)" : "var(--gm-gunmetal-dark)",
+      borderBottom: active ? "3px solid var(--brand-primary)" : "3px solid transparent",
+      marginBottom: "-2px",
+    };
+  }
+  renderVals() {
+    const { officers, students, mentors, activeTab } = this.state;
+    const labels = ["Officers", "Students", "Mentors"];
+    const tabButtons = labels.map((label, i) => ({
+      label, style: this.tabStyle(activeTab === i),
+      onClick: () => this.setState({ activeTab: i }),
+    }));
+    return {
+      tabButtons, officers, students, mentors,
+      showOfficers: activeTab === 0, showStudents: activeTab === 1, showMentors: activeTab === 2,
+      studentCount: students.length || "12", mentorCount: mentors.length || "5",
+    };
+  }
+}
+
+</script>
+</body>
+</html>

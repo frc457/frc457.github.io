@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/styles.css">
+  <script src="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+</helmet>
+<dc-import name="NavHeader" active="impact" hint-size="100%,64px"></dc-import>
+<main>
+  <section style="background:var(--gm-royal-blue);color:var(--gm-white);padding:56px 24px;text-align:center">
+    <h1 style="font-family:var(--font-title);font-size:clamp(28px,4vw,40px);margin:0">Outreach</h1>
+  </section>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <h2 style="font-family:var(--font-title);font-size:28px;text-align:center;margin:0 0 24px">Impacting our Community</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="32px" hint-size="100%,180px">
+        <div style="text-align:center">
+          <div style="font-family:var(--font-body);font-size:20px;color:var(--text-secondary);margin-bottom:10px">Outreach hours, 2023–Present</div>
+          <div style="font-family:var(--font-heading);font-weight:700;font-size:64px;color:var(--gm-royal-blue)">500</div>
+        </div>
+      </x-import>
+      <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="32px" hint-size="100%,180px">
+        <div style="text-align:center">
+          <div style="font-family:var(--font-body);font-size:20px;color:var(--text-secondary);margin-bottom:10px">Outreach hours, 2026 season</div>
+          <div style="font-family:var(--font-heading);font-weight:700;font-size:64px;color:var(--gm-royal-blue)">100</div>
+        </div>
+      </x-import>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center">
+      <div>
+        <h2 style="font-family:var(--font-title);font-size:28px;margin:0 0 16px">STEM Nights</h2>
+        <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);color:var(--text-secondary);margin:0">Add a paragraph here about our STEM Night outreach — which schools we visit, what students get to do with the robot, and why it matters to us.</p>
+      </div>
+      <image-slot id="stem-nights-photo" shape="rounded" radius="8" placeholder="Drop a STEM Night photo" style="width:100%;height:280px"></image-slot>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center">
+      <image-slot id="community-outreach-photo" shape="rounded" radius="8" placeholder="Drop a community outreach photo" style="width:100%;height:280px"></image-slot>
+      <div>
+        <h2 style="font-family:var(--font-title);font-size:28px;margin:0 0 16px">Community Outreach</h2>
+        <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);color:var(--text-secondary);margin:0">Add a paragraph here about our community outreach — the events, trade shows, and organizations we work with, and why it matters to us.</p>
+      </div>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center">
+      <div>
+        <h2 style="font-family:var(--font-title);font-size:28px;margin:0 0 16px">Supporting Other Teams</h2>
+        <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);color:var(--text-secondary);margin:0">Add a paragraph here about how we support other FIRST teams — mentoring newer teams, hosting events, and sharing what we've learned.</p>
+      </div>
+      <image-slot id="supporting-teams-photo" shape="rounded" radius="8" placeholder="Drop a photo" style="width:100%;height:280px"></image-slot>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center">
+      <image-slot id="practice-field-photo" shape="rounded" radius="8" placeholder="Drop a photo" style="width:100%;height:280px"></image-slot>
+      <div>
+        <h2 style="font-family:var(--font-title);font-size:28px;margin:0 0 16px">San Antonio's only FULL SIZE Practice Field</h2>
+        <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);color:var(--text-secondary);margin:0">Add a paragraph here about our practice field — how it helps our team prepare, and how other teams in the area get to use it too.</p>
+      </div>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center">
+      <div>
+        <h2 style="font-family:var(--font-title);font-size:28px;margin:0 0 16px">Expanding STEM in South San</h2>
+        <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);color:var(--text-secondary);margin:0">Add a paragraph here about how we're growing STEM opportunities across South San ISD — new programs, partnerships, and the younger students we're reaching.</p>
+      </div>
+      <image-slot id="expanding-stem-photo" shape="rounded" radius="8" placeholder="Drop a photo" style="width:100%;height:280px"></image-slot>
+    </div>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,120px"></dc-import>
+
+</x-dc>
+</body>
+</html>

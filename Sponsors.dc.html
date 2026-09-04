@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/styles.css">
+  <script src="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+</helmet>
+<dc-import name="NavHeader" active="sponsors" hint-size="100%,64px"></dc-import>
+<main>
+  <section style="background:var(--gm-royal-blue);color:var(--gm-white);padding:56px 24px;text-align:center">
+    <h1 style="font-family:var(--font-title);font-size:clamp(28px,4vw,40px);margin:0">Team Sponsorship</h1>
+  </section>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:40px 24px">
+    <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);max-width:720px;margin:0 auto 20px;color:var(--text-secondary)">The students who make up The Grease Monkeys are pursuing futures in a number of different areas, most of which involve STEM. They are backed by a supportive school district and mentored by dedicated individuals who have a wide variety of careers.</p>
+    <p style="font-family:var(--font-body);font-size:15px;line-height:var(--leading-body);max-width:720px;margin:0 auto 40px;color:var(--text-secondary)">We depend on sponsors and donors to help us purchase food for students, robot parts, team apparel, and event entry fees. Every dollar you donate gives a student an opportunity they can't get anywhere else! All funds go directly to the South San High School Robotics student activity account, and a full accounting of money used is available at any time upon request.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px">
+      <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="0px" hint-size="100%,320px">
+        <image-slot id="support-sponsor" src="assets/support-sponsor.avif" shape="rect" placeholder="Photo" style="width:100%;height:220px"></image-slot>
+        <div style="padding:20px;display:flex;flex-direction:column;gap:10px">
+          <h3 style="font-family:var(--font-heading);font-size:16px;margin:0">Sponsor</h3>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--text-secondary);line-height:var(--leading-body);margin:0">Fund our build season and travel as a business or organization sponsor.</p>
+          <a href="mailto:frcteam457@gmail.com?subject=Sponsorship%20Inquiry" style="text-decoration:none"><x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Button" size="sm" hint-size="auto,36px">Email Us</x-import></a>
+        </div>
+      </x-import>
+      <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="0px" hint-size="100%,320px">
+        <image-slot id="support-donate" src="assets/support-donate.avif" shape="rect" placeholder="Photo" style="width:100%;height:220px"></image-slot>
+        <div style="padding:20px;display:flex;flex-direction:column;gap:10px">
+          <h3 style="font-family:var(--font-heading);font-size:16px;margin:0">Donate</h3>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--text-secondary);line-height:var(--leading-body);margin:0">Individual gifts of any size go straight to parts, apparel, and entry fees.</p>
+          <a href="mailto:frcteam457@gmail.com?subject=Donation%20Inquiry" style="text-decoration:none"><x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Button" size="sm" hint-size="auto,36px">Email Us</x-import></a>
+        </div>
+      </x-import>
+      <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="0px" hint-size="100%,320px">
+        <image-slot id="support-mentor" src="assets/support-mentor.avif" shape="rect" placeholder="Photo" style="width:100%;height:220px"></image-slot>
+        <div style="padding:20px;display:flex;flex-direction:column;gap:10px">
+          <h3 style="font-family:var(--font-heading);font-size:16px;margin:0">Mentor</h3>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--text-secondary);line-height:var(--leading-body);margin:0">Share your skills — engineering, business, or otherwise — with our students weekly.</p>
+          <a href="mailto:frcteam457@gmail.com?subject=Mentoring%20Interest" style="text-decoration:none"><x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Button" size="sm" hint-size="auto,36px">Email Us</x-import></a>
+        </div>
+      </x-import>
+    </div>
+
+  <h2 style="font-family:var(--font-title);font-size:24px;text-align:center;margin:0 0 8px">Our Sponsors</h2>
+  <p style="font-family:var(--font-body);color:var(--text-secondary);max-width:640px;margin:0 auto 28px;text-align:center">Our success would not be possible without the support of our sponsors. Their generosity allows us to provide life-changing opportunities to our community.</p>
+
+
+  <sc-for list="{{ tierGroups }}" as="g" hint-placeholder-count="3">
+    <div style="margin-bottom:32px">
+      <h3 style="font-family:var(--font-heading);font-size:16px;margin-bottom:14px;color:var(--gm-royal-blue)">{{ g.name }}</h3>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
+        <sc-for list="{{ g.sponsors }}" as="s" hint-placeholder-count="2">
+          <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="18px" hint-size="100%,280px">
+            <sc-if value="{{ s.hideCard }}" hint-placeholder-val="{{ false }}">
+              <p style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--gm-black);line-height:1.8;margin:0;white-space:pre-line;text-align:center">{{ s.blurbOrDefault }}</p>
+            </sc-if>
+            <sc-if value="{{ s.showCard }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;gap:14px;align-items:center">
+                <image-slot id="{{ s.photoId }}" src="{{ s.photoUrl }}" fit="contain" shape="rounded" radius="6" placeholder="Logo" style="width:200px;height:200px;flex-shrink:0"></image-slot>
+
+                <div>
+                  <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;margin-bottom:4px">{{ s.name }}</div>
+                  <p style="font-family:var(--font-body);font-size:13px;color:var(--text-secondary);line-height:var(--leading-body);margin:0">{{ s.blurbOrDefault }}</p>
+                </div>
+              </div>
+            </sc-if>
+          </x-import>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+
+  <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="24px" hint-size="100%,140px">
+    <div style="text-align:center">
+      <h3 style="font-family:var(--font-heading);font-size:16px;margin-bottom:8px">Become a sponsor</h3>
+      <p style="font-family:var(--font-body);font-size:14px;color:var(--text-secondary);margin-bottom:14px">Support 457's build season, competitions, and outreach programs.</p>
+      <a href="mailto:frcteam457@gmail.com?subject=Sponsorship%20Inquiry" style="text-decoration:none"><x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Button" hint-size="auto,40px">Request Sponsor Packet</x-import></a>
+    </div>
+  </x-import>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,120px"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sponsors: [] };
+  async componentDidMount() {
+    const m = await import('./data/sponsors-data.js');
+    this.setState({ sponsors: m.sponsors });
+  }
+  renderVals() {
+    const order = ["Diamond", "Platinum", "Gold", "Silver"];
+    const groups = order.map(name => ({
+      name, label: name,
+      sponsors: this.state.sponsors.filter(s => s.tier === name).map(s => ({ ...s, blurbOrDefault: s.blurb || "Thank you for supporting Team 457!", showCard: !s.hideCard })),
+    })).filter(g => g.sponsors.length);
+    return { tierGroups: groups };
+  }
+}
+
+</script>
+</body>
+</html>

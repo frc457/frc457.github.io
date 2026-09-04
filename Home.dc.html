@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/styles.css">
+  <script src="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+</helmet>
+<dc-import name="NavHeader" active="home" hint-size="100%,64px"></dc-import>
+<main>
+  <section style="position:relative;color:var(--gm-white);text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;height:430px;overflow:hidden">
+    <image-slot id="home-hero-banner-photo" src="uploads/20260404_090203.jpg" shape="rect" placeholder="Drop banner photo" style="position:absolute;inset:0;width:100%;height:100%;z-index:0"></image-slot>
+    <div style="position:absolute;inset:0;background:var(--gm-royal-blue);opacity:0.55;z-index:1;pointer-events:none"></div>
+    <div style="position:relative;z-index:2;pointer-events:none">
+      <h1 style="font-family:var(--font-title);font-weight:700;font-size:clamp(48px,7.5vw,78px);margin:18px 0 8px;line-height:var(--leading-tight)">FRC Team 457<br>The Grease Monkeys</h1>
+      <p style="font-family: var(--font-body); font-size: 30px; opacity: 0.9; margin: 0">South San Antonio High School · San Antonio, TX</p>
+      <p style="font-family: var(--font-body); font-size: 15px; opacity: 0.85; margin: 6px 0 0">Est. 1999</p>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:32px 24px 0">
+    <image-slot id="home-hero" shape="rounded" radius="8" placeholder="Drop this year's team photo" style="width:100%;height:520px"></image-slot>
+  </div>
+  <div style="max-width:var(--container-max);margin:32px auto 0;padding:0 24px">
+    <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0">
+  </div>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:24px 24px;display:flex;justify-content:center;align-items:center;gap:24px">
+    <a href="https://www.instagram.com/frc457/" aria-label="Instagram" style="color:var(--gm-black);text-decoration:none;display:flex;align-items:center">
+      <svg width="66" height="66" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"></circle></svg>
+    </a>
+    <a href="https://www.youtube.com/channel/UCdkcCzay1GXza02l9AUsHuQ" aria-label="YouTube" style="color:var(--gm-black);text-decoration:none;display:flex;align-items:center">
+      <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="3"></rect><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"></path></svg>
+    </a>
+    <a href="https://github.com/frc457" aria-label="GitHub" style="color:var(--gm-black);text-decoration:none;display:flex;align-items:center">
+      <svg width="66" height="66" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.57.69.48A10 10 0 0 0 12 2z"></path></svg>
+    </a>
+    <a href="https://www.thebluealliance.com/team/457" aria-label="The Blue Alliance" style="color:var(--gm-black);text-decoration:none;display:flex;align-items:center">
+      <img src="assets/tba-lamp.svg" alt="The Blue Alliance" style="height:66px;width:auto;filter:invert(1)">
+    </a>
+  </div>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
+    <h2 style="font-family:var(--font-heading);font-size:20px;margin-bottom:18px;text-align:center">Thank you to our sponsors</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <sc-for list="{{ sponsors }}" as="s" hint-placeholder-count="8">
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+          <image-slot id="{{ s.homeSlotId }}" src="{{ s.photoUrl }}" fit="contain" shape="rounded" radius="6" placeholder="Logo" style="width:100%;height:128px;--slot-frame-bg:var(--gm-white)"></image-slot>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0 0 40px">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:0 24px 56px;text-align:center">
+    <h3 style="font-family:var(--font-heading);font-size:18px;margin-bottom:10px">FIRST Robotics Competition</h3>
+    <p style="font-family:var(--font-body);font-size:14px;color:var(--text-secondary);max-width:640px;margin:0 auto 18px">Students design, build, and program industrial-scale robots to take on a new challenge each season — working alongside professional mentors to build engineering, business, and leadership skills.</p>
+    <div style="max-width:200px;margin:0 auto">
+      <image-slot id="first-logo" shape="rect" fit="contain" placeholder="Drop the official FIRST Robotics Competition (FRC) logo" style="width:100%;height:80px"></image-slot>
+    </div>
+  </section>
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 24px">
+    <hr style="border:none;border-top:2px solid var(--gm-border);margin:0 0 40px">
+  </div>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:0 24px 56px;text-align:center">
+    <h3 style="font-family:var(--font-heading);font-size:18px;margin-bottom:10px">Contact Us</h3>
+    <p style="font-family:var(--font-body);font-size:14px;color:var(--text-secondary);margin:0 0 8px;line-height:var(--leading-body)">
+      South San Antonio High School<br>Grease Monkey Robotics<br>7535 Barlite Blvd.<br>San Antonio, TX 78224
+    </p>
+    <p style="font-family:var(--font-body);font-size:14px;color:var(--text-secondary);margin:0">
+      Team Email: <a href="mailto:frcteam457@gmail.com" style="color:var(--text-link)">frcteam457@gmail.com</a><br>
+      Head Coach: <a href="mailto:msorola@southsanisd.net" style="color:var(--text-link)">msorola@southsanisd.net</a>
+    </p>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,120px"></dc-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sponsors: [] };
+  async componentDidMount() {
+    const s = await import('./data/sponsors-data.js');
+    this.setState({ sponsors: s.sponsors });
+  }
+  renderVals() {
+    const sponsors = this.state.sponsors.filter(s => !s.hideCard).map(s => ({ ...s, homeSlotId: "home-" + s.photoId }));
+    return { sponsors };
+  }
+}
+
+</script>
+</body>
+</html>

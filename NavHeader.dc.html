@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/styles.css">
+  <script src="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/_ds_bundle.js"></script>
+</helmet>
+<header style="background:var(--gm-royal-blue);border-bottom:var(--border-thick) solid var(--gm-black);position:sticky;top:0;z-index:10">
+  <div style="max-width:var(--container-max);margin:0 auto;display:flex;align-items:center;gap:20px;padding:10px 24px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--gm-white)">
+      <img src="assets/logo-full-color.png" alt="Grease Monkeys 457 logo" style="height:44px">
+      <span style="font-family:var(--font-title);font-weight:700;font-size:17px;white-space:nowrap;color:var(--gm-white)">The Grease Monkeys</span>
+    </a>
+    <nav style="display:flex;gap:16px;margin-left:auto;flex-wrap:wrap">
+      <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="7">
+        <a href="{{ item.href }}" style="{{ item.linkStyle }}">{{ item.label }}</a>
+      </sc-for>
+    </nav>
+  </div>
+</header>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;active&quot;:{&quot;editor&quot;:null,&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const active = this.props.active ?? "";
+    const items = [
+      ["home", "Home.dc.html", "Home"],
+      ["updates", "Updates.dc.html", "2026 - REBUILT"],
+      ["roster", "AboutUs.dc.html", "Our Team"],
+      ["robots", "Robots.dc.html", "Our Robots"],
+      ["calendar", "Calendar.dc.html", "Calendar"],
+      ["sponsors", "Sponsors.dc.html", "Sponsor"],
+      ["impact", "Outreach.dc.html", "Outreach"],
+    ];
+    const base = "font-family:var(--font-heading);font-weight:700;font-size:13px;padding:6px 2px;text-decoration:none;border-bottom:3px solid ";
+    const navItems = items.map(([key, href, label]) => ({
+      href, label,
+      linkStyle: base + (key === active ? "var(--gm-white);color:var(--gm-white)" : "transparent;color:var(--gm-white)"),
+    }));
+    return { navItems };
+  }
+}
+
+</script>
+</body>
+</html>

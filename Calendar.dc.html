@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/tokens/base.css">
+  <link rel="stylesheet" href="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/styles.css">
+  <script src="_ds/grease-monkeys-457-design-system-65893e59-55b1-451b-9f29-911aecf6850e/_ds_bundle.js"></script>
+</helmet>
+<dc-import name="NavHeader" active="calendar" hint-size="100%,64px"></dc-import>
+<main>
+  <section style="background:var(--gm-royal-blue);color:var(--gm-white);padding:56px 24px;text-align:center">
+    <h1 style="font-family:var(--font-title);font-size:clamp(28px,4vw,40px);margin:0">Team Calendar</h1>
+  </section>
+  <section style="max-width:var(--container-max);margin:0 auto;padding:40px 24px 64px">
+    <div style="border:1.5px solid var(--gm-border);border-radius:8px;overflow:hidden">
+      <iframe src="https://calendar.google.com/calendar/embed?src=frcteam457%40gmail.com&ctz=America%2FChicago" style="width:100%;height:650px;border:0;display:block" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,120px"></dc-import>
+
+</x-dc>
+</body>
+</html>

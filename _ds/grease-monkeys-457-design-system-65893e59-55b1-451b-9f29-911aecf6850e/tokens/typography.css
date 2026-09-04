@@ -1,0 +1,33 @@
+@font-face{font-family:"Lexend";src:url("../assets/fonts/Lexend-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Lexend";src:url("../assets/fonts/Lexend-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Roboto";src:url("../assets/fonts/Roboto-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Roboto";src:url("../assets/fonts/Roboto-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Roboto";src:url("../assets/fonts/Roboto-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:"Roboto";src:url("../assets/fonts/Roboto-BoldItalic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:"Montserrat";src:url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Montserrat";src:url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Montserrat Medium";src:url("../assets/fonts/MontserratMedium-Regular.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:"Montserrat Medium";src:url("../assets/fonts/MontserratMedium-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Montserrat Medium";src:url("../assets/fonts/MontserratMedium-Italic.ttf") format("truetype");font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:"A4 Speed";src:url("../assets/fonts/A4Speed-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}
+:root{
+--font-title:"Lexend",sans-serif;
+--font-heading:"Roboto",sans-serif;
+--font-body:"Montserrat Medium","Montserrat",sans-serif;
+--font-numeral:"A4 Speed",sans-serif;
+--text-title:clamp(28px,3vw,40px);
+--text-h1:32px;
+--text-h2:24px;
+--text-h3:20px;
+--text-body:15px;
+--text-small:13px;
+--text-caption:12px;
+--weight-title:700;
+--weight-heading:700;
+--weight-body:500;
+--leading-tight:1.1;
+--leading-heading:1.25;
+--leading-body:1.55;
+--tracking-title:0.01em;
+--tracking-numeral:0.02em;
+}
