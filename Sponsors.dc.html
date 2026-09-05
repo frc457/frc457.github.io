@@ -63,7 +63,7 @@
         <sc-for list="{{ g.sponsors }}" as="s" hint-placeholder-count="2">
           <x-import component-from-global-scope="GreaseMonkeys457DesignSystem_65893e.Card" padding="18px" hint-size="100%,280px">
             <sc-if value="{{ s.hideCard }}" hint-placeholder-val="{{ false }}">
-              <p style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--gm-black);line-height:1.8;margin:0;white-space:pre-line;text-align:center">{{ s.blurbOrDefault }}</p>
+            <h4 style="font-family:var(--font-heading);font-weight:700;font-size:18px;color:var(--gm-black);margin:0 0 10px;text-align:center;text-decoration:underline;text-underline-offset:3px">{{ s.name }}</h4>              <p style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--gm-black);line-height:1.8;margin:0;white-space:pre-line;text-align:center">{{ s.blurbOrDefault }}</p>
             </sc-if>
             <sc-if value="{{ s.showCard }}" hint-placeholder-val="{{ true }}">
               <div style="display:flex;gap:14px;align-items:center">
