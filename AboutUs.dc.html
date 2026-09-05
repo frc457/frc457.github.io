@@ -58,44 +58,12 @@
   <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0 0 32px">
 
   <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:6px">Our Team</h3>
-  <p style="font-family:var(--font-body);color:var(--text-secondary);margin:0 0 20px">{{ studentCount }} active student members · {{ mentorCount }} mentors this season</p>
+ 
 
   </section>
 </main>
 <dc-import name="SiteFooter" hint-size="100%,120px"></dc-import>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  state = { officers: [], students: [], mentors: [], activeTab: 0 };
-  async componentDidMount() {
-    const m = await import('./data/roster-data.js');
-    this.setState({ officers: m.officers, students: m.students, mentors: m.mentors });
-  }
-  tabStyle(active) {
-    return {
-      padding: "10px 18px", border: "none", background: "none", cursor: "pointer",
-      fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: 14,
-      color: active ? "var(--brand-primary)" : "var(--gm-gunmetal-dark)",
-      borderBottom: active ? "3px solid var(--brand-primary)" : "3px solid transparent",
-      marginBottom: "-2px",
-    };
-  }
-  renderVals() {
-    const { officers, students, mentors, activeTab } = this.state;
-    const labels = ["Officers", "Students", "Mentors"];
-    const tabButtons = labels.map((label, i) => ({
-      label, style: this.tabStyle(activeTab === i),
-      onClick: () => this.setState({ activeTab: i }),
-    }));
-    return {
-      tabButtons, officers, students, mentors,
-      showOfficers: activeTab === 0, showStudents: activeTab === 1, showMentors: activeTab === 2,
-      studentCount: students.length || "12", mentorCount: mentors.length || "5",
-    };
-  }
-}
-
-</script>
 </body>
 </html>
