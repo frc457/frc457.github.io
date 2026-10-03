@@ -15,5 +15,5 @@ export const sponsors = [
   { tier: "Gold", name: "South San Antonio ISD Educational Foundation", blurb: "", photoId: "sponsor-ssaisd-edfoundation", photoUrl: "assets/sponsor-ssaisd-edfoundation.png" },
   { tier: "Silver", name: "Bill Miller Bar-B-Q", blurb: "", photoId: "sponsor-billmiller", photoUrl: "assets/sponsor-billmiller.png" },
   { tier: "Silver", name: "Chick-fil-A", blurb: "", photoId: "sponsor-chickfila", photoUrl: "assets/sponsor-chickfila.png" },
-  { tier: "Silver", name: "Individual Donors", blurb: "Rudy Pena\nDr. Altmeyer\nMr. & Mrs. Henry\nAna Galaviz\nKevin Hernandez\nGloria Longoria", photoId: "sponsor-individual-donors", hideCard: true },
+  { tier: "Silver", name: "Individual Donors", blurb: "Rudy Pena\nDr. Altmeyer\nMr. & Mrs. Henry\nAna Galaviz\nKevin Hernandez\nGloria Longoria\nGuadalupe Hernandez", photoId: "sponsor-individual-donors", hideCard: true },
 ];
