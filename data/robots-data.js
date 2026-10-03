@@ -1,19 +1,30 @@
 // One entry per competition robot. Add a new entry at the TOP of this array each season.
 // awards is a list — add as many strings as needed, or leave as [] for none.
 export const robots = [
+  /*
+  {
+    year: 2027, name: "PUNCH", game: "REBUILT",
+    result: "PUNCH was our robot for the 2026 game, REBUILT. We competed at the San Antonio and Space City #2 District Events, where we were first picks at both events. We ranked #58 in the district, earning 114 points, and we competed in the FIRST in Texas District Championship, where we finished ranked 18th in the Apollo Division.",
+    awards: ["Industrial Design Award — San Antonio District Event"],
+    photoId: "robot-2026",
+    photoUrl: "assets/robot-2026.jpg",
+    albumUrl: "https://photos.app.goo.gl/CeRNJEH3uPv7dTAcA"
+  },
+  */
   {
     year: 2026, name: "PUNCH", game: "REBUILT",
     result: "PUNCH was our robot for the 2026 game, REBUILT. We competed at the San Antonio and Space City #2 District Events, where we were first picks at both events. We ranked #58 in the district, earning 114 points, and we competed in the FIRST in Texas District Championship, where we finished ranked 18th in the Apollo Division.",
     awards: ["Industrial Design Award — San Antonio District Event"],
     photoId: "robot-2026",
-    photoUrl: "https://static.wixstatic.com/media/ebced9_84a80e7cb4f6490a995835e5ed41fca3~mv2.jpg",
+    photoUrl: "assets/robot-2026.jpg",
+    albumUrl: "https://photos.app.goo.gl/CeRNJEH3uPv7dTAcA"
   },
   {
     year: 2025, name: "ChrisTina", game: "REEFSCAPE",
     result: "ChrisTina was our robot for the 2025 game, REEFSCAPE. We competed at the Belton and Fort Worth District Events, where we were alliance captains at both events. We were ranked #30 in the district, having earned 179 points, and we competed in the FIRST in Texas District Championship, where we were alliance captains in the Apollo Division.",
     awards: ["Judge's Award — Belton District Event"],
     photoId: "robot-2025",
-    photoUrl: "https://static.wixstatic.com/media/ebced9_c528f6940a654198b6489c9aefcc8bbc~mv2.jpg",
+    photoUrl: "assets/robot-2025.jpg",
     albumUrl: "https://photos.google.com/share/AF1QipP_YHFE12Pw1EHOcuTwHSJ-EcEDkfN2_2J93YjXg3ZEbE_rXfYrd9ZJpaNHtMyebQ?key=MHAwMEo1LUJfVWZTd0RPajFxdGRxVmFDMVEyUE5R",
   },
   {
@@ -21,7 +32,7 @@ export const robots = [
     result: "Crash Jr. was our robot for the 2024 game, CRESCENDO. We competed at the San Antonio and Amarillo District Events, and we finished ranked #117 having earned 36 points.",
     awards: ["Event Winner — STEMGals", "Event Finalist — NTX Tournament of Robots"],
     photoId: "robot-2024",
-    photoUrl: "https://static.wixstatic.com/media/ebced9_24705ee4d88a47e19be4ad50387f198c~mv2.jpg",
+    photoUrl: "assets/robot-2024.jpg",
     albumUrl: "https://photos.google.com/album/AF1QipNbltNs3O5ByTuZvk5ZEP_c6NY2H1czx6TpsJev?pli=1",
   },
   {
@@ -29,7 +40,7 @@ export const robots = [
     result: "Patrick was our robot for the 2023 game, CHARGED UP. We competed at the Belton and San Antonio District Events, and we finished 160th in the district rankings with 14.00 district points.",
     awards: [],
     photoId: "robot-2023",
-    photoUrl: "https://static.wixstatic.com/media/ebced9_9817d6edb2004c25bbd35bb027bec35e~mv2.jpg",
+    photoUrl: "assets/robot-2023.jpg",
     albumUrl: "https://photos.app.goo.gl/PLcf65aLHNY8xRaC6",
   },
   {
