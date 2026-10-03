@@ -1,16 +1,7 @@
 // One entry per competition robot. Add a new entry at the TOP of this array each season.
 // awards is a list — add as many strings as needed, or leave as [] for none.
 export const robots = [
-  /*
-  {
-    year: 2027, name: "PUNCH", game: "REBUILT",
-    result: "PUNCH was our robot for the 2026 game, REBUILT. We competed at the San Antonio and Space City #2 District Events, where we were first picks at both events. We ranked #58 in the district, earning 114 points, and we competed in the FIRST in Texas District Championship, where we finished ranked 18th in the Apollo Division.",
-    awards: ["Industrial Design Award — San Antonio District Event"],
-    photoId: "robot-2026",
-    photoUrl: "assets/robot-2026.jpg",
-    albumUrl: "https://photos.app.goo.gl/CeRNJEH3uPv7dTAcA"
-  },
-  */
+  
   {
     year: 2026, name: "PUNCH", game: "REBUILT",
     result: "PUNCH was our robot for the 2026 game, REBUILT. We competed at the San Antonio and Space City #2 District Events, where we were first picks at both events. We ranked #58 in the district, earning 114 points, and we competed in the FIRST in Texas District Championship, where we finished ranked 18th in the Apollo Division.",
