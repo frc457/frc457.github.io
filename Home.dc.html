@@ -51,7 +51,12 @@
     <hr style="border:none;border-top:1.5px solid var(--gm-border);margin:0">
   </div>
   <section style="max-width:var(--container-max);margin:0 auto;padding:48px 24px">
-    <h2 style="font-family:var(--font-heading);font-size:20px;margin-bottom:18px;text-align:center">Thank you to our sponsors</h2>
+    <h2 style="font-family:var(--font-heading);font-size:30px;margin-bottom:18px;text-align:center">Thank you to our sponsors</h2>
+    <div style="display:flex;justify-content:center;gap:24px;margin:0 0 28px">
+      <sc-for list="{{ topSponsors }}" as="s" hint-placeholder-count="1">
+        <image-slot id="{{ s.homeSlotId }}" src="{{ s.photoUrl }}" fit="contain" shape="rounded" radius="6" placeholder="Logo" style="width:100%;max-width:720px;height:350px;--slot-frame-bg:var(--gm-white)"></image-slot>
+      </sc-for>
+    </div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
       <sc-for list="{{ sponsors }}" as="s" hint-placeholder-count="8">
         <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
@@ -97,8 +102,8 @@ class Component extends DCLogic {
     this.setState({ sponsors: s.sponsors });
   }
   renderVals() {
-    const sponsors = this.state.sponsors.filter(s => !s.hideCard).map(s => ({ ...s, homeSlotId: "home-" + s.photoId }));
-    return { sponsors };
+    const all = this.state.sponsors.filter(s => !s.hideCard).map(s => ({ ...s, homeSlotId: "home-" + s.photoId }));
+    return { topSponsors: all.filter(s => s.tier === "Diamond"), sponsors: all.filter(s => s.tier !== "Diamond") };
   }
 }
 
