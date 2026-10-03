@@ -47,7 +47,6 @@ albumUrl: "https://photos.app.goo.gl/xxxxxxxx",
 | Robot names, season recaps, awards, robot photos, album links | `data/robots-data.js` |
 | Sponsors and sponsor tiers | `data/sponsors-data.js` |
 | Home page banner, intro, contact info, sponsor logo grid | `Home.dc.html` |
-| Weekly season updates | `Updates.dc.html` |
 | Team history, mission/vision, "What We Do" | `AboutUs.dc.html` |
 | Outreach sections and impact numbers | `Outreach.dc.html` |
 | Google Calendar embed | `Calendar.dc.html` |
